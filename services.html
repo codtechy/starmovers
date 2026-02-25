@@ -103,113 +103,148 @@
 			</div>
 		</div>
 	</div>
-	<!-- Page Header End -->
+    <style>
+        .service-item {
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
 
+.service-item .icon-box {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ed1c24;
+    transition: all 0.4s ease;
+}
+
+.service-item .icon-box i {
+    font-size: 32px;
+    color: #ed1c24;
+    transition: all 0.4s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(237, 28, 36, 0.15);
+}
+
+.service-item:hover .icon-box {
+    background-color: rgba(237, 28, 36, 0.08);
+}
+    </style>
+	<!-- Page Header End -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!-- Our Services Section Start -->
 <div class="page-services">
     <div class="container">
         <div class="row">
 
             <!-- Residential Moving -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-1.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-home"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Residential Moving</h3>
-                        <p>Safe and stress-free home relocation across UAE with professional packing and careful handling.</p>                            
+                        <p>Safe and stress-free home relocation across UAE with professional packing and careful handling.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Commercial Moving -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.2s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-2.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-building"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Commercial Moving</h3>
-                        <p>Efficient business relocation services designed to minimize downtime and maximize productivity.</p>                            
+                        <p>Efficient business relocation services designed to minimize downtime and maximize productivity.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Office Relocation -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.4s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-3.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-briefcase"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Office Relocation</h3>
-                        <p>Professional office shifting solutions including furniture dismantling, IT equipment handling and setup.</p>                            
+                        <p>Professional office shifting solutions including furniture dismantling, IT equipment handling and setup.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Villa & Apartment Moving -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.6s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-4.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-city"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Villa & Apartment Moving</h3>
-                        <p>Complete moving services for villas and apartments with secure packing and timely delivery.</p>                            
+                        <p>Complete moving services for villas and apartments with secure packing and timely delivery.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Packing & Unpacking -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.8s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-5.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-box-open"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Packing & Unpacking</h3>
-                        <p>High-quality packing materials and expert packing services to ensure maximum protection.</p>                            
+                        <p>High-quality packing materials and expert packing services to ensure maximum protection.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Furniture Installation -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="1s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="1s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-6.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-couch"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Furniture Installation</h3>
-                        <p>Professional dismantling and reinstallation of furniture with expert craftsmanship.</p>                            
+                        <p>Professional dismantling and reinstallation of furniture with expert craftsmanship.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Storage Solutions -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="1.2s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-7.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-warehouse"></i>
+                    </div>
                     <div class="service-content">
                         <h3>Storage Solutions</h3>
-                        <p>Secure short-term and long-term storage facilities with 24/7 monitoring and protection.</p>                            
+                        <p>Secure short-term and long-term storage facilities with 24/7 monitoring and protection.</p>
                     </div>
                 </div>
             </div>
 
             <!-- International Moving -->
-            <div class="col-lg-3">
-                <div class="service-item wow fadeInUp" data-wow-delay="1.4s">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="1.4s">
                     <div class="icon-box">
-                        <img src="images/icon-service-item-8.svg" alt="">
-                    </div>                                    
+                        <i class="fas fa-globe"></i>
+                    </div>
                     <div class="service-content">
                         <h3>International Moving</h3>
-                        <p>Reliable international relocation services with customs clearance and secure transportation.</p>                            
+                        <p>Reliable international relocation services with customs clearance and secure transportation.</p>
                     </div>
                 </div>
             </div>
@@ -221,127 +256,109 @@
 
 
 
-<!-- Footer Main Start -->
+<!-- ================= FOOTER START ================= -->
 <footer class="main-footer">
     <div class="container">
         <div class="row">
 
-            <!-- Company Info -->
-            <div class="col-lg-3 col-md-12">
+            <!-- About Company -->
+            <div class="col-lg-4 col-md-12">
                 <div class="about-footer">
                     <div class="footer-logo">
-                        <img src="images/logo.svg" alt="Star Movers Logo">
+                        <img src="images/logow.png" alt="Star Movers LLC Logo">
                     </div>
 
                     <div class="about-footer-content">
                         <p>
-                            Star Movers is your trusted relocation partner in Dubai & across the UAE.
-                            We provide professional, secure, and stress-free residential and commercial
-                            moving solutions tailored to your needs.
+                            Star Movers LLC provides reliable, safe, and affordable 
+                            relocation services across Dubai and the UAE. 
+                            We handle your move with professionalism, care, and efficiency.
                         </p>
                     </div>
                 </div>
             </div>
 
             <!-- Quick Links -->
-            <div class="col-lg-3 col-md-5">
+            <div class="col-lg-4 col-md-5">
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Star Movers</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
-                        <li><a href="projects.html">Our Projects</a></li>
-                        <li><a href="contact.html">Get a Free Quote</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Contact Info -->
-            <div class="col-lg-3 col-md-7">
+            <!-- Contact Details -->
+            <div class="col-lg-4 col-md-7">
                 <div class="footer-links">
                     <h3>Contact Us</h3>
 
                     <div class="footer-contact-item">
                         <div class="icon-box">
-                            <img src="images/icon-location.svg" alt="">
+                            <img src="images/icon-location.svg" alt="Location">
                         </div>
                         <div class="footer-contact-content">
                             <p>Dubai, United Arab Emirates</p>
                         </div>
                     </div>
-                    
+
                     <div class="footer-contact-item">
                         <div class="icon-box">
-                            <img src="images/icon-mail.svg" alt="">
+                            <img src="images/icon-mail.svg" alt="Email">
                         </div>
                         <div class="footer-contact-content">
-                            <p><a href="mailto:info@starmovers.ae">info@starmovers.ae</a></p>
-                            <p><a href="mailto:support@starmovers.ae">support@starmovers.ae</a></p>
+                            <p><a href="mailto:info@starmoversllc.ae">info@starmoversllc.ae</a></p>
                         </div>
                     </div>
-                    
+
                     <div class="footer-contact-item">
                         <div class="icon-box">
-                            <img src="images/icon-phone.svg" alt="">
+                            <img src="images/icon-phone.svg" alt="Phone">
                         </div>
                         <div class="footer-contact-content">
-                            <p><a href="tel:+971501234567">+971 50 123 4567</a></p>
+                            <p><a href="tel:0565406688">056-5406688</a></p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- Newsletter -->
-            <div class="col-lg-3 col-md-12">
-                <div class="footer-links footer-newsletter-form">
-                    <h3>Stay Connected</h3>
-                    <p>Subscribe for moving tips, relocation updates & special offers.</p>
-
-                    <form id="newslettersForm" action="#" method="POST">
-                        <div class="form-group">
-                            <input type="email" name="mail" class="form-control" 
-                                   placeholder="Enter your email" required>
-                            <button type="submit" class="btn-default btn-highlighted">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Copyright -->
+          
+            <!-- Bottom Bar -->
             <div class="col-lg-12">
                 <div class="footer-copyright">
-                    <div class="footer-copyright-text">
-                        <p>
-                            Copyright © 
-                            <span id="currentYear"></span> 
-                            Star Movers. All Rights Reserved.
-                        </p>
-                    </div>
+
+                <div class="footer-copyright-text">
+    <p>
+        Copyright © <span id="year"></span> Star Movers LLC. 
+        All Rights Reserved. Developed by 
+        <a style="color:white" href="https://drawaymedia.com" target="_blank">Draway Media LLP</a>
+    </p>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
                     <div class="footer-social-links">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/starmoversuae/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a targ="_blank" href="https://www.instagram.com/starmovers.ae/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <!-- <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li> -->
                         </ul>
                     </div>
+
                 </div>
             </div>
 
         </div>
     </div>
 </footer>
-<!-- Footer Main End -->
-
-<!-- Auto Current Year Script -->
-<script>
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
-
+<!-- ================= FOOTER END ================= -->
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>

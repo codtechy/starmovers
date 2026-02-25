@@ -162,7 +162,7 @@
                 <!-- About Us Image Start -->
                 <div class="about-us-image">
                     <figure class="image-anime reveal">
-                        <img src="images/about-star-movers.jpg" alt="Star Movers LLC">
+                        <img src="images/about.jpeg" alt="Star Movers LLC">
                     </figure>
                 </div>
                 <!-- About Us Image End -->
@@ -223,9 +223,9 @@
                         </div>
                         
                         <div class="about-owner-info-body wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="about-owner-signature">
+                            <!-- <div class="about-owner-signature">
                                 <img src="images/signature.png" alt="Signature">
-                            </div>
+                            </div> -->
                             <div class="about-owner-info-content">
                                 <h3>Star Movers Management</h3>
                                 <p>Operations Team</p>
@@ -235,7 +235,7 @@
 
                     <div class="about-owner-image">
                         <figure class="image-anime reveal">
-                            <img src="images/about-owner-image.jpg" alt="Star Movers Team">
+                            <img src="images/about1.jpeg" alt="Star Movers Team">
                         </figure>
                     </div>
 
@@ -248,11 +248,50 @@
 </div>
 
 <!-- About Us Section End -->
+<style>
+    /* Service Card */
+.service-item {
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
 
+/* Icon Circle */
+.service-item .icon-box {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    border: 2px solid #ed1c24;
+}
+
+/* Icon */
+.service-item .icon-box i {
+    font-size: 34px;
+    color: #ed1c24; /* Always same color */
+    transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(237, 28, 36, 0.2);
+}
+
+/* Background light effect only */
+.service-item:hover .icon-box {
+    background-color: rgba(237, 28, 36, 0.1);
+}
+</style>
     <!-- About Us Section End -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Our Services Section Start -->
-   <div class="our-services dark-section">
+<div class="our-services dark-section">
     <div class="container">
         <div class="row section-row align-items-center">
             <div class="col-lg-12">
@@ -265,115 +304,113 @@
             </div>
         </div>
 
-        <div class="row">
+        <div style="justify-content:center" class="row">
 
             <!-- Service 1 -->
             <div class="col-lg-3 col-md-6">
-                <div class="service-item wow fadeInUp">
+                <div class="service-item wow fadeInUp text-center">
                     <div class="icon-box">
-                        <img src="images/icon-home.svg" alt="">
+                        <i class="fas fa-home fa-3x"></i>
                     </div>                                    
                     <div class="service-content">
-                        <h3><a href="service-single.html">Home Relocation</a></h3>
-                        <p>Safe and stress-free relocation of apartments and villas across Dubai & UAE.</p>                            
-                    </div>
-                    <div class="service-btn">
-                        <a href="service-single.html" class="readmore-btn">read more</a>  
+                        <h3>Home Relocation</h3>
+                        <p>
+                            Safe and stress-free relocation of apartments and villas across Dubai & UAE. 
+                            We ensure careful packing, secure transport, and smooth delivery of your belongings.
+                        </p>                            
                     </div>
                 </div>
             </div>
 
             <!-- Service 2 -->
             <div class="col-lg-3 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.2s">
                     <div class="icon-box">
-                        <img src="images/icon-office.svg" alt="">
+                        <i class="fas fa-building fa-3x"></i>
                     </div>                                    
                     <div class="service-content">
-                        <h3><a href="service-single.html">Office Relocation</a></h3>
-                        <p>Efficient commercial moving services with minimal business downtime.</p>                            
-                    </div>
-                    <div class="service-btn">
-                        <a href="service-single.html" class="readmore-btn">read more</a>  
+                        <h3>Office Relocation</h3>
+                        <p>
+                            Efficient commercial moving services designed to minimize business downtime. 
+                            We handle office equipment, documents, and furniture with complete professionalism.
+                        </p>                            
                     </div>
                 </div>
             </div>
 
             <!-- Service 3 -->
             <div class="col-lg-3 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.4s">
                     <div class="icon-box">
-                        <img src="images/icon-packaging.svg" alt="">
+                        <i class="fas fa-box-open fa-3x"></i>
                     </div>                                    
                     <div class="service-content">
-                        <h3><a href="service-single.html">Packing Services</a></h3>
-                        <p>Professional packing using high-quality materials to protect your valuables.</p>                            
-                    </div>
-                    <div class="service-btn">
-                        <a href="service-single.html" class="readmore-btn">read more</a>  
+                        <h3>Packing Services</h3>
+                        <p>
+                            Professional packing using high-quality materials to protect fragile and valuable items. 
+                            Our team ensures everything is securely wrapped and labeled properly.
+                        </p>                            
                     </div>
                 </div>
             </div>
 
             <!-- Service 4 -->
             <div class="col-lg-3 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item wow fadeInUp text-center" data-wow-delay="0.6s">
                     <div class="icon-box">
-                        <img src="images/icon-furniture.svg" alt="">
+                        <i class="fas fa-couch fa-3x"></i>
                     </div>                                    
                     <div class="service-content">
-                        <h3><a href="service-single.html">Furniture Dismantling & Assembling</a></h3>
-                        <p>Expert handling of furniture dismantling, reassembly and installation.</p>                            
-                    </div>
-                    <div class="service-btn">
-                        <a href="service-single.html" class="readmore-btn">read more</a>  
+                        <h3>Furniture Dismantling & Assembling</h3>
+                        <p>
+                            Expert handling of furniture dismantling, reassembly, and installation. 
+                            We ensure safe handling of bulky and delicate furniture items.
+                        </p>                            
                     </div>
                 </div>
             </div>
 
-            <!-- Extra Service 5 -->
+            <!-- Service 5 -->
             <div class="col-lg-3 col-md-6">
-                <div class="service-item wow fadeInUp">
+                <div class="service-item wow fadeInUp text-center">
                     <div class="icon-box">
-                        <img src="images/icon-domestic.svg" alt="">
+                        <i class="fas fa-truck-moving fa-3x"></i>
                     </div>                                    
                     <div class="service-content">
-                        <h3><a href="service-single.html">Domestic Moving</a></h3>
-                        <p>Reliable domestic moving services within Dubai and across UAE.</p>                            
-                    </div>
-                    <div class="service-btn">
-                        <a href="service-single.html" class="readmore-btn">read more</a>  
+                        <h3>Domestic Moving</h3>
+                        <p>
+                            Reliable domestic moving services within Dubai and across UAE. 
+                            Timely pickup and safe transportation guaranteed.
+                        </p>                            
                     </div>
                 </div>
             </div>
 
-            <!-- Extra Service 6 -->
+            <!-- Service 6 -->
             <div class="col-lg-3 col-md-6">
-                <div class="service-item wow fadeInUp">
+                <div class="service-item wow fadeInUp text-center">
                     <div class="icon-box">
-                        <img src="images/icon-storage.svg" alt="">
+                        <i class="fas fa-warehouse fa-3x"></i>
                     </div>                                    
                     <div class="service-content">
-                        <h3><a href="service-single.html">Storage Solutions</a></h3>
-                        <p>Secure and flexible short-term & long-term storage facilities.</p>                            
-                    </div>
-                    <div class="service-btn">
-                        <a href="service-single.html" class="readmore-btn">read more</a>  
+                        <h3>Storage Solutions</h3>
+                        <p>
+                            Secure and flexible short-term & long-term storage facilities 
+                            with 24/7 monitoring and easy access options.
+                        </p>                            
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-12">
-                <div class="section-footer-text wow fadeInUp" data-wow-delay="0.8s">
+                <div class="section-footer-text text-center wow fadeInUp" data-wow-delay="0.8s">
                     <p>Need a reliable moving company in Dubai? <a href="contact.html">Contact us today</a></p>
-                    <a href="services.html" class="btn-default btn-highlighted">View All Services</a>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-
     <!-- Our Services Section End -->
 
     <!-- Our Projects Section Start -->
@@ -408,11 +445,11 @@
                             </figure>
 
                             <div class="project-btn">
-                                <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="#"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3><a href="project-single.html">Urban Retreat Relocation</a></h3>
+                            <h3><a href="#">Urban Retreat Relocation</a></h3>
                         </div>
                     </div>
                     <!-- Project Item End -->
@@ -427,11 +464,11 @@
                             </figure>
 
                             <div class="project-btn">
-                                <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="#"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3><a href="project-single.html">Cityscape Transitions</a></h3>
+                            <h3><a href="#">Cityscape Transitions</a></h3>
                         </div>
                     </div>
                     <!-- Project Item End -->
@@ -446,77 +483,22 @@
                             </figure>
 
                             <div class="project-btn">
-                                <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="#"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3><a href="project-single.html">Luxury Living Moves</a></h3>
+                            <h3><a href="#">Luxury Living Moves</a></h3>
                         </div>
                     </div>
                     <!-- Project Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Project Item Start -->
-                    <div class="project-item wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="project-image">
-                            <figure class="image-anime">
-                                <img src="images/project-4.jpg" alt="">
-                            </figure>
-
-                            <div class="project-btn">
-                                <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3><a href="project-single.html">Seamless Office Relocation</a></h3>
-                        </div>
-                    </div>
-                    <!-- Project Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Project Item Start -->
-                    <div class="project-item wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="project-image">
-                            <figure class="image-anime">
-                                <img src="images/project-5.jpg" alt="">
-                            </figure>
-
-                            <div class="project-btn">
-                                <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3><a href="project-single.html">Suburban Dream Shifts</a></h3>
-                        </div>
-                    </div>
-                    <!-- Project Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Project Item Start -->
-                    <div class="project-item wow fadeInUp" data-wow-delay="1s">
-                        <div class="project-image">
-                            <figure class="image-anime">
-                                <img src="images/project-6.jpg" alt="">
-                            </figure>
-
-                            <div class="project-btn">
-                                <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3><a href="project-single.html">Corporate Move</a></h3>
-                        </div>
-                    </div>
-                    <!-- Project Item End -->
-                </div>
+      
 
                 <div class="col-lg-12">
                     <!-- Section Footer Button Start -->
                     <div class="section-footer-btn wow fadeInUp" data-wow-delay="1.2s">
-                        <a href="projects.html" class="btn-default">view all projects</a>
+                        <a href="contact.html" class="btn-default">Contact Us</a>
                     </div>
                     <!-- Section Footer Button End -->
                 </div>
@@ -1010,7 +992,7 @@
                         </figure>
                     </div>
 
-                    <div class="intro-video-button">
+                    <!-- <div class="intro-video-button">
                         <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
                             <figure>
                                 <img src="images/intro-video-circle.svg" alt="">
@@ -1019,7 +1001,7 @@
                                 <img src="images/intro-video-play-btn.svg" alt="">
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -1235,12 +1217,17 @@
             <div class="col-lg-12">
                 <div class="footer-copyright">
 
-                    <div class="footer-copyright-text">
-                        <p>
-                            Copyright © <?php echo date('Y'); ?> Star Movers LLC. All Rights Reserved.
+                <div class="footer-copyright-text">
+    <p>
+        Copyright © <span id="year"></span> Star Movers LLC. 
+        All Rights Reserved. Developed by 
+        <a style="color:white" href="https://drawaymedia.com" target="_blank">Draway Media LLP</a>
+    </p>
+</div>
 
-                        </p>
-                    </div>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
                     <div class="footer-social-links">
                         <ul>
