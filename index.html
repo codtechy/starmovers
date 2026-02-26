@@ -162,7 +162,7 @@
                 <!-- About Us Image Start -->
                 <div class="about-us-image">
                     <figure class="image-anime reveal">
-                        <img src="images/about.jpeg" alt="Star Movers LLC">
+                        <img src="images/about.jpg" alt="Star Movers LLC">
                     </figure>
                 </div>
                 <!-- About Us Image End -->
@@ -602,9 +602,9 @@
                     </div>
 
                     <div class="our-skill-image-2">
-                        <figure class="image-anime reveal">
+                        <!-- <figure class="image-anime reveal">
                             <img src="images/star-movers-2.jpg" alt="Packing Service">
-                        </figure>
+                        </figure> -->
                     </div>
 
                     <div class="contact-us-circle">
@@ -717,65 +717,68 @@
                         </div>
                     </div>
 
-                    <!-- Request Quote Form -->
-                    <div class="request-quote-form-box wow fadeInUp" data-wow-delay="0.4s">
-                        <h3>Request a Free Quote</h3>
+                   <!-- Request Quote Form -->
+<div class="request-quote-form-box wow fadeInUp" data-wow-delay="0.4s">
+    <h3>Request a Free Quote</h3>
 
-                        <div class="request-quote-form">
-                            <form action="#" method="POST">
-                                <div class="row">
+    <div class="request-quote-form">
+        <form id="whatsappForm">
+            <div class="row">
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                                    </div>
-                                
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                                    </div>
-                                
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
-                                    </div>
-                            
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="date" name="date" class="form-control" required>
-                                    </div>
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+            
+                <div class="form-group col-md-6 mb-4">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+            
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+        
+                <div class="form-group col-md-6 mb-4">
+                    <input type="date" name="date" class="form-control" required>
+                </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="from_location" class="form-control" placeholder="Moving From" required>
-                                    </div>
+                <div class="form-group col-md-12 mb-4">
+                    <input type="text" name="moving_route" class="form-control" 
+                           placeholder="Moving From → Moving To (e.g., Kochi to Dubai)" required>
+                </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="to_location" class="form-control" placeholder="Moving To" required>
-                                    </div>
+                <div class="form-group col-md-12">
+                    <button type="submit" class="btn-default">Whats App</button>
+                </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <select name="movetype" class="form-control form-select" required>
-                                            <option value="" disabled selected>Move Type</option>
-                                            <option value="local">Local Moving</option>
-                                            <option value="long_distance">Long Distance Moving</option>
-                                            <option value="international">International Moving</option>
-                                        </select>
-                                    </div>
+            </div>
+        </form>
+    </div>
+</div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <select name="services" class="form-control form-select" required>
-                                            <option value="" disabled selected>Service Type</option>
-                                            <option value="residential">Residential Moving</option>
-                                            <option value="commercial">Commercial Moving</option>
-                                            <option value="office">Office Relocation</option>
-                                            <option value="packing">Packing & Unpacking</option>
-                                            <option value="storage">Storage Solutions</option>
-                                            <option value="furniture">Furniture Installation</option>
-                                        </select>
-                                    </div>
+<!-- WhatsApp Script -->
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
-                                    <div class="form-group col-md-12">
-                                        <button type="submit" class="btn-default">Get Free Quote</button>
-                                    </div>
+    var name = document.querySelector("input[name='name']").value;
+    var email = document.querySelector("input[name='email']").value;
+    var phone = document.querySelector("input[name='phone']").value;
+    var date = document.querySelector("input[name='date']").value;
+    var moving_route = document.querySelector("input[name='moving_route']").value;
 
-                                </div>
-                            </form>
+    var message = 
+        "🚛 *New Moving Quote Request* %0A%0A" +
+        "👤 *Full Name:* " + name + "%0A" +
+        "📧 *Email:* " + email + "%0A" +
+        "📞 *Phone:* " + phone + "%0A" +
+        "📅 *Moving Date:* " + date + "%0A" +
+        "📍 *Route:* " + moving_route;
+
+    var whatsappURL = "https://wa.me/919876543210?text=" + message; // 🔴 Replace with your number
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
                         </div>
                     </div>
 
@@ -1052,33 +1055,7 @@
 
         <div class="row">
 
-            <!-- Blog 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="post-item wow fadeInUp">
-                    <div class="post-featured-image">
-                        <a href="blog-single.html">
-                            <figure class="image-anime">
-                                <img src="images/post-1.jpg" alt="Unpacking tips after moving">
-                            </figure>
-                        </a>
-                    </div>
-
-                    <div class="post-item-body">
-                        <div class="post-item-content">
-                            <h3>
-                                <a href="blog-single.html">
-                                    10 Smart Tips to Unpack Quickly After Moving
-                                </a>
-                            </h3>
-                            <p>Learn how to organize, prioritize, and settle into your new home efficiently after relocation.</p>
-                        </div>
-
-                        <div class="post-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+         
 
             <!-- Blog 2 -->
             <div class="col-lg-4 col-md-6">
@@ -1108,33 +1085,7 @@
                 </div>
             </div>
 
-            <!-- Blog 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="post-featured-image">
-                        <a href="blog-single.html">
-                            <figure class="image-anime">
-                                <img src="images/post-3.jpg" alt="Benefits of hiring professional movers">
-                            </figure>
-                        </a>
-                    </div>
-
-                    <div class="post-item-body">
-                        <div class="post-item-content">
-                            <h3>
-                                <a href="blog-single.html">
-                                    Why Hiring Professional Movers Saves Time & Money
-                                </a>
-                            </h3>
-                            <p>Understand the advantages of choosing experienced movers for a smooth and hassle-free relocation experience.</p>
-                        </div>
-
-                        <div class="post-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
 
         </div>
     </div>

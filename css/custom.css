@@ -978,7 +978,7 @@ header.main-header .header-sticky.active{
 	padding: 100px 0;
 }
 
-.about-us::before{
+/* .about-us::before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -990,7 +990,7 @@ header.main-header .header-sticky.active{
 	width: 300px;
 	height: 230px;
 	z-index: 1;
-}
+} */
 
 .about-us-image{
 	position: relative;
@@ -1732,7 +1732,7 @@ header.main-header .header-sticky.active{
 	bottom: 0;
 	left: 0;
 	transform: translateY(50%);
-	background: url('../images/section-bg-shape-2.png') no-repeat;
+	/* background: url('../images/section-bg-shape-2.png') no-repeat; */
 	background-position: bottom left;
 	background-size: contain;
 	width: 332px;

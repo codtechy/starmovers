@@ -154,47 +154,70 @@
             </div>
 
             <!-- Contact Form -->
-            <div class="col-lg-8">
-                <div class="contact-us-form">
-                    <div class="section-title">
-                        <h2>Send Message to <span>Star Movers</span></h2>
+           <div class="col-lg-8">
+    <div class="contact-us-form">
+        <div class="section-title">
+            <h2>Send Message to <span>Star Movers</span></h2>
+        </div>
+        
+        <div class="contact-form">
+            <form id="whatsappForm">
+                <div class="row">
+
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="text" name="fname" class="form-control" placeholder="First Name" required>
                     </div>
-                    
-                    <div class="contact-form">
-                        <form action="#" method="POST">
-                            <div class="row">
 
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="fname" class="form-control" placeholder="First Name" required>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
-                                </div>
-
-                                <div class="form-group col-md-12 mb-4">
-                                    <textarea name="message" class="form-control" rows="4" placeholder="Your Moving Details"></textarea>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn-default">
-                                        Submit Message
-                                    </button>
-                                </div>
-
-                            </div>
-                        </form>
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
                     </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group col-md-12 mb-4">
+                        <textarea name="message" class="form-control" rows="4" placeholder="Your Moving Details" required></textarea>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <button type="submit" class="btn-default">
+                            Submit Message
+                        </button>
+                    </div>
+
                 </div>
-            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    var fname = document.querySelector("input[name='fname']").value;
+    var lname = document.querySelector("input[name='lname']").value;
+    var email = document.querySelector("input[name='email']").value;
+    var phone = document.querySelector("input[name='phone']").value;
+    var messageDetails = document.querySelector("textarea[name='message']").value;
+
+    var message = 
+        "📩 *New Contact Message - Star Movers* %0A%0A" +
+        "👤 *Name:* " + fname + " " + lname + "%0A" +
+        "📧 *Email:* " + email + "%0A" +
+        "📞 *Phone:* " + phone + "%0A%0A" +
+        "📝 *Moving Details:* %0A" + messageDetails;
+
+    var whatsappURL = "https://wa.me/919876543210?text=" + message; // 🔴 Replace number
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
 
         </div>
     </div>
