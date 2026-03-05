@@ -125,7 +125,7 @@
                             </div>
                             <div class="contact-info-content">
                                 <p>Call Us Anytime</p>
-                                <h3><a href="tel:+971501234567">+971 50 123 4567</a></h3>
+                                <h3><a href="#">056 888 4661 <br> 056 540 6688</a></h3>
                             </div>
                         </div>
 
@@ -204,21 +204,20 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e){
     var lname = document.querySelector("input[name='lname']").value;
     var email = document.querySelector("input[name='email']").value;
     var phone = document.querySelector("input[name='phone']").value;
-    var messageDetails = document.querySelector("textarea[name='message']").value;
+    var message = document.querySelector("textarea[name='message']").value;
 
-    var message = 
-        "📩 *New Contact Message - Star Movers* %0A%0A" +
-        "👤 *Name:* " + fname + " " + lname + "%0A" +
-        "📧 *Email:* " + email + "%0A" +
-        "📞 *Phone:* " + phone + "%0A%0A" +
-        "📝 *Moving Details:* %0A" + messageDetails;
+    var whatsappMessage = "New Moving Inquiry:%0A%0A"
+        + "First Name: " + fname + "%0A"
+        + "Last Name: " + lname + "%0A"
+        + "Email: " + email + "%0A"
+        + "Phone: " + phone + "%0A"
+        + "Details: " + message;
 
-    var whatsappURL = "https://wa.me/919876543210?text=" + message; // 🔴 Replace number
+    var whatsappURL = "https://wa.me/971544335572?text=" + whatsappMessage;
 
     window.open(whatsappURL, "_blank");
 });
 </script>
-
         </div>
     </div>
 </div>
